@@ -9,9 +9,7 @@ Use the following command to run the project from terminal
 python3 app.py
 ```
 
-Use the following url to access the project
-
-[localhost](http://localhost:8000/)
+Use [localhost](http://localhost:8000/) to access the project
 
 # Usage
 Two endpoints to use the project
