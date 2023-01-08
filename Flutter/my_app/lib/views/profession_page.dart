@@ -38,7 +38,6 @@ class _ProfessionPageState extends State<ProfessionPage> {
     return Scaffold(
         appBar: AppBar(
           title: const Text('Professions'),
-          centerTitle: true,
         ),
         body: Visibility(
           visible: isLoaded,
@@ -71,18 +70,14 @@ class _ProfessionPageState extends State<ProfessionPage> {
       itemCount: professions?.metiers?.length,
       itemBuilder: (context, index) {
         final items = professions?.metiers;
-        //final sortedItems = isDescending ? items!.reversed.toList() : items;
         final sortedItems = items!
           ..sort((item1, item2) => isDescending
               ? item2!.compareTo(item1!)
               : item1!.compareTo(item2!));
 
         return ListTile(
-          title: Text(sortedItems![index] ?? ""),
+          title: Text(sortedItems[index] ?? ""),
         );
-        //return Container(
-        //child: Text(professions?.metiers![index] ?? ""),
-        //);
       },
     );
   }
