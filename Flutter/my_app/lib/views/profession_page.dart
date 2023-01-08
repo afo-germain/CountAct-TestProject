@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/models/profession.dart';
+import 'package:my_app/nav_bar.dart';
 import 'package:my_app/services/remote_service.dart';
 
 class ProfessionPage extends StatefulWidget {
@@ -36,6 +37,7 @@ class _ProfessionPageState extends State<ProfessionPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        drawer: const NavBar(),
         appBar: AppBar(
           title: const Text('Professions'),
         ),

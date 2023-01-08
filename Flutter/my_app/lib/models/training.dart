@@ -90,11 +90,11 @@ class Result {
         contact: json["contact"],
         createdAt: DateTime.parse(json["createdAt"]),
         diploma: json["diploma"],
-        diplomaLevel: diplomaLevelValues!.map[json["diplomaLevel"]],
+        diplomaLevel: diplomaLevelValues.map[json["diplomaLevel"]],
         id: json["id"],
         idRco: json["idRco"],
         idRcoFormation: json["idRcoFormation"],
-        ideaType: ideaTypeValues!.map[json["ideaType"]],
+        ideaType: ideaTypeValues.map[json["ideaType"]],
         job: json["job"],
         lastUpdateAt: DateTime.parse(json["lastUpdateAt"]),
         longTitle: json["longTitle"],
@@ -294,7 +294,7 @@ class Rome {
   Code? code;
 
   factory Rome.fromJson(Map<String, dynamic> json) => Rome(
-        code: codeValues!.map[json["code"]],
+        code: codeValues.map[json["code"]],
       );
 
   Map<String, dynamic> toJson() => {

@@ -10,7 +10,7 @@ class RemoteSevice {
 
     var client = http.Client();
 
-    var uri = Uri.parse(baseUrl + professionEndPoint);
+    var uri = Uri.https(baseUrl, professionEndPoint);
     var response = await client.get(uri);
 
     if (response.statusCode == 200) {
