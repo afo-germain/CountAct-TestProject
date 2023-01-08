@@ -20,8 +20,8 @@ def get_training():
     """
     training_end_point = 'formationsParRegion'
     training_params = {
-        'romes' : 'M1805',
-        'region' : '84',
+        'romes' : 'F1603,M1805',
+        #'region' : '27',
         'departement' : '',
         'caller' : 'contact@domaine',
         'opco' : 'akto'
